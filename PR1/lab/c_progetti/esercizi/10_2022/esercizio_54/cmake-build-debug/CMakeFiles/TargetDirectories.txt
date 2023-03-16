@@ -1,0 +1,3 @@
+/home/just/Personal/university/PR1_lab/c_progetti/esercizi/10_2022/esercizio_54/cmake-build-debug/CMakeFiles/esercizio_54.dir
+/home/just/Personal/university/PR1_lab/c_progetti/esercizi/10_2022/esercizio_54/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/just/Personal/university/PR1_lab/c_progetti/esercizi/10_2022/esercizio_54/cmake-build-debug/CMakeFiles/rebuild_cache.dir

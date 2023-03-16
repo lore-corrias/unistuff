@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/clion/bin/ninja/linux/ninja -G Ninja -S /home/just/Personal/university/PR1_lab/c_progetti/esercizi/11_2022/esercizio_4 -B /home/just/Personal/university/PR1_lab/c_progetti/esercizi/11_2022/esercizio_4/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/just/Personal/university/PR1_lab/c_progetti/esercizi/11_2022/esercizio_4/cmake-build-debug
