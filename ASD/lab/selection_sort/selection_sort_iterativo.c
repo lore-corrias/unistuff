@@ -26,8 +26,8 @@ void selectionSortIterativo(int *array, int dim) {
             }
             cont_conf_iter++;
         }
-        // scambia le posizioni di i e dell'elemento minore
-        scambia(array, min, i);
+        // scambiaInteri le posizioni di i e dell'elemento minore
+        scambiaInteri(array, min, i);
         cont_scambi_iter++;
     }
 }

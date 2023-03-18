@@ -4,13 +4,17 @@
 #include "selection_sort.h"
 
 
-int main() {
-
-
+/**
+ * Funzione per testare un algoritmo di selection sort su degli array ordinati
+ * in maniera diversa, e di dimensioni di 100, 1000, 10000 e 100000 elementi.
+ * L'otuput consiste nel numero di operazioni effettuate per l'ordinamento e
+ * nel tempo di esecuzione per ogni operazione.
+ */
+void selectionSort() {
     clock_t start, end;
     double t;
 
-    int dimensioni[] = {100, 1000, 10000, 100000};// 200000, 500000};
+    int dimensioni[] = {100, 1000, 10000, 100000};// 200000, 500000};, questi sono too much
     arrayType modalitaGenerazione;
     int* array;
 

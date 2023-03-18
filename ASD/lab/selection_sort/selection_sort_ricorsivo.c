@@ -24,7 +24,7 @@ void selectionSortRicorsivo(int *array, int dim, int start) {
     int minIndex = findMin(array, start, start+1, dim);
 
     // scambio del minimo con start, se array[minimo] < array[start]
-    scambia(array, start, minIndex);
+    scambiaInteri(array, start, minIndex);
     cont_scambi_ric++;
 
     // chiamata ricorsiva sull'elemento successivo

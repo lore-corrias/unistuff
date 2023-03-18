@@ -54,8 +54,36 @@ int* generaArray(int dimensione, arrayType tipoArray) {
 }
 
 
-void scambia(int* array, int elemento1, int elemento2) {
+/**
+ * Funzione per scambiare due interi in una lista.
+ *
+ * @param array La lista di interi.
+ * @param elemento1 L'indice del primo intero da scambiare.
+ * @param elemento2 L'indice del secondo intero da scambiare.
+ */
+void scambiaInteri(int* array, int elemento1, int elemento2) {
     int tmp = array[elemento1];
+    array[elemento1] = array[elemento2];
+    array[elemento2] = tmp;
+}
+
+
+/**
+ * Funzione per scambiare due stringhe in una lista.
+ *
+ * @param array La lista di stringhe.
+ * @param elemento1 L'indice della prima stringa da scambiare.
+ * @param elemento2 L'indice della seconda stringa da scambiare.
+ */
+void scambiaStringhe(char* array[], int elemento1, int elemento2) {
+    char* tmp = NULL;
+    tmp = (char*) malloc(sizeof(elemento1));
+    if(tmp == NULL) {
+        printf("\nImpossibile allocare memoria dinamicamente.");
+        exit(-1);
+    }
+
+    strcpy(tmp, array[elemento1]);
     array[elemento1] = array[elemento2];
     array[elemento2] = tmp;
 }
