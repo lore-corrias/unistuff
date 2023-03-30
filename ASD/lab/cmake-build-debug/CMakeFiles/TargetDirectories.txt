@@ -1,0 +1,3 @@
+/home/just/Personal/university/unistuff/ASD/lab/cmake-build-debug/CMakeFiles/lab.dir
+/home/just/Personal/university/unistuff/ASD/lab/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/just/Personal/university/unistuff/ASD/lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir

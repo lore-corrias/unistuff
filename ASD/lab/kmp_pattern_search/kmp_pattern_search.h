@@ -1,8 +1,14 @@
 //
 // Created by just on 30/03/23.
 //
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
-#ifndef LAB_KMP_PATTERN_SEARCH_H
-#define LAB_KMP_PATTERN_SEARCH_H
+#define STR_LEN_MAX 15
+#define PATTERN_LEN_MAX 15
 
-#endif //LAB_KMP_PATTERN_SEARCH_H
+int* funzione_insuccesso(char pattern[], int pattern_len);
+int kmp_match(char stringa[], char pattern[], int stringa_len, int pattern_len);
+int kmp_match_ciclica(char stringa[], char pattern[], int stringa_len, int pattern_len);
+void search_pattern();

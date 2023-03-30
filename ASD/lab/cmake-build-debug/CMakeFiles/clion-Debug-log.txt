@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/var/lib/snapd/snap/clion/229/bin/ninja/linux/x64/ninja -G Ninja -S /home/just/Personal/university/unistuff/ASD/lab -B /home/just/Personal/university/unistuff/ASD/lab/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/just/Personal/university/unistuff/ASD/lab/cmake-build-debug
