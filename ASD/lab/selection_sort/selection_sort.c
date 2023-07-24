@@ -1,12 +1,9 @@
-//
-// Created by just on 16/03/23.
-//
 #include "selection_sort.h"
 
 
 /**
  * Funzione per testare un algoritmo di selection sort su degli array ordinati
- * in maniera diversa, e di dimensioni di 100, 1000, 10000 e 100000 elementi.
+ * in maniera diversa, e di dimensioni di 100, 1000, 10000, 20000 e 50000 elementi.
  * L'otuput consiste nel numero di operazioni effettuate per l'ordinamento e
  * nel tempo di esecuzione per ogni operazione.
  */
@@ -14,7 +11,7 @@ void selectionSort() {
     clock_t start, end;
     double t;
 
-    int dimensioni[] = {100, 1000, 10000, 100000};// 200000, 500000};, questi sono too much
+    int dimensioni[] = {100, 1000, 10000, 20000, 50000};
     arrayType modalitaGenerazione;
     int* array;
 
@@ -36,9 +33,10 @@ void selectionSort() {
                 printf("casuale.");
                 break;
         }
-        for(int j = 0; j < 4; j++) {
+        for(int j = 0; j < 5; j++) {
             printf("\n- Numero di input: %d.", dimensioni[j]);
             array = generaArray(dimensioni[j], modalitaGenerazione);
+
 
             cont_conf_ric = 0;
             cont_scambi_ric = 0;
@@ -50,8 +48,8 @@ void selectionSort() {
             t = ((double) (end-start)) / CLOCKS_PER_SEC;
             printf(
                     " \nRicorsivo: tempo di esecuzione: %lf secondi. "
-                    "Numero di confronti: %d. "
-                    "Numero di scambi: %d", t, cont_conf_ric, cont_scambi_ric
+                    "Numero di confronti: %ld. "
+                    "Numero di scambi: %ld", t, cont_conf_ric, cont_scambi_ric
             );
 
             cont_conf_iter = 0;
@@ -64,8 +62,8 @@ void selectionSort() {
             t = ((double) (end-start)) / CLOCKS_PER_SEC;
             printf(
                     " \nIterativo: tempo di esecuzione: %lf secondi. "
-                    "Numero di confronti: %d. "
-                    "Numero di scambi: %d", t, cont_conf_ric, cont_scambi_ric
+                    "Numero di confronti: %ld. "
+                    "Numero di scambi: %ld", t, cont_conf_iter, cont_scambi_iter
             );
         }
     }

@@ -1,0 +1,3 @@
+/home/just/Personal/unistuff/ASD/lab/kmp_pattern_search/cmake-build-debug/CMakeFiles/kmp_pattern_search.dir
+/home/just/Personal/unistuff/ASD/lab/kmp_pattern_search/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/just/Personal/unistuff/ASD/lab/kmp_pattern_search/cmake-build-debug/CMakeFiles/rebuild_cache.dir

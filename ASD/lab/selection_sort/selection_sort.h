@@ -1,13 +1,10 @@
-//
-// Created by just on 16/03/23.
-//
-#include "../utils/array.h"
+#include "array.h"
 
 // variabili di conteggio per il numero di scambi e confronti ricorsivi
-extern int cont_conf_ric, cont_scambi_ric;
+extern long cont_conf_ric, cont_scambi_ric;
 
 // variabili di conteggio per il numero di scambi e confronti iterativi
-extern int cont_conf_iter, cont_scambi_iter;
+extern long cont_conf_iter, cont_scambi_iter;
 
 
 int findMin(int* array, int minpos, int start, int dim);

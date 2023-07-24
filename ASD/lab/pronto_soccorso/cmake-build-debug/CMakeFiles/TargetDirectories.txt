@@ -1,0 +1,3 @@
+/home/just/Personal/unistuff/ASD/lab/pronto_soccorso/cmake-build-debug/CMakeFiles/pronto_soccorso.dir
+/home/just/Personal/unistuff/ASD/lab/pronto_soccorso/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/just/Personal/unistuff/ASD/lab/pronto_soccorso/cmake-build-debug/CMakeFiles/rebuild_cache.dir

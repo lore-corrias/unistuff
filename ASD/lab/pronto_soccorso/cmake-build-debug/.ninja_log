@@ -1,0 +1,14 @@
+# ninja log v5
+0	46	1689874019396173781	CMakeFiles/pronto_soccorso.dir/main.c.o	fe2efd8c37271ed2
+0	40	1689874033761100153	CMakeFiles/pronto_soccorso.dir/pronto_soccorso.c.o	82e84442d446cc5d
+40	69	1689874033788100015	pronto_soccorso	9aff84abf5663f2e
+0	34	1689874089316814229	CMakeFiles/pronto_soccorso.dir/main.c.o	fe2efd8c37271ed2
+34	61	1689874089342814095	pronto_soccorso	9aff84abf5663f2e
+0	33	1689874164527424519	CMakeFiles/pronto_soccorso.dir/main.c.o	fe2efd8c37271ed2
+33	55	1689874164549424404	pronto_soccorso	9aff84abf5663f2e
+1	36	1689874177826355320	CMakeFiles/pronto_soccorso.dir/main.c.o	fe2efd8c37271ed2
+1	48	1689874177838355257	CMakeFiles/pronto_soccorso.dir/pronto_soccorso.c.o	82e84442d446cc5d
+48	72	1689874177862355133	pronto_soccorso	9aff84abf5663f2e
+0	32	1689874263850905842	CMakeFiles/pronto_soccorso.dir/main.c.o	fe2efd8c37271ed2
+1	41	1689874263859905795	CMakeFiles/pronto_soccorso.dir/pronto_soccorso.c.o	82e84442d446cc5d
+41	63	1689874263880905685	pronto_soccorso	9aff84abf5663f2e

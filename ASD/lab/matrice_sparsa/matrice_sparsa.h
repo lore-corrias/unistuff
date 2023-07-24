@@ -1,8 +1,26 @@
-//
-// Created by just on 24/07/23.
-//
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
-#ifndef MATRICE_SPARSA_MATRICE_SPARSA_H
-#define MATRICE_SPARSA_MATRICE_SPARSA_H
+#define NUMC 15
+#define NUMR 10
 
-#endif //MATRICE_SPARSA_MATRICE_SPARSA_H
+
+typedef struct{
+    int riga;
+    int colonna;
+    int valore;
+}Tripla;
+
+
+void fill_classic_matrix(int matrix[][NUMC], int numr, int numc);
+void print_classic_matrix(int matrix[][NUMC], int numr, int numc);
+void search_element_in_classic_matrix(int matrix[][NUMC], int numr, int numc, int numric);
+
+
+
+Tripla *creaMatriceSparsa();
+void stampaMatriceSparsa(Tripla* matriceSparsa);
+void cercaElementoMatriceSparsa(Tripla *matriceSparsa);
+void trasposizioneRapida(Tripla* a, Tripla* b);
+void inizializzaMatriceSparsa(Tripla *matriceSparsa);

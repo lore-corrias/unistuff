@@ -1,0 +1,6 @@
+# ninja log v5
+1	28	1690213627692969065	CMakeFiles/binary_search.dir/binary_search_iterativa.c.o	91baff398d0f9dd8
+1	29	1690213627692969065	CMakeFiles/binary_search.dir/binary_search_ricorsiva.c.o	4342c284ed2421ad
+0	40	1690213627703969013	CMakeFiles/binary_search.dir/main.c.o	ff4b58f4f9113f35
+1	58	1690213627721968928	CMakeFiles/binary_search.dir/binary_search_hotel.c.o	6811a9a9bbec0ef1
+58	93	1690213627756968762	binary_search	be9550f32fc7f0be

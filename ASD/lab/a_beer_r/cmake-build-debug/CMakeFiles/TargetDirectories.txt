@@ -1,0 +1,3 @@
+/home/just/Personal/unistuff/ASD/lab/a_beer_r/cmake-build-debug/CMakeFiles/a_beer_r.dir
+/home/just/Personal/unistuff/ASD/lab/a_beer_r/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/just/Personal/unistuff/ASD/lab/a_beer_r/cmake-build-debug/CMakeFiles/rebuild_cache.dir

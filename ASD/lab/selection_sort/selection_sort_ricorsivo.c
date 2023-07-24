@@ -1,10 +1,7 @@
-//
-// Created by just on 16/03/23.
-//
 #include "selection_sort.h"
 
-int cont_scambi_ric = 0;
-int cont_conf_ric = 0;
+long cont_scambi_ric = 0;
+long cont_conf_ric = 0;
 
 
 /**
@@ -15,20 +12,19 @@ int cont_conf_ric = 0;
  * @param start Indice dell'array da cui far partire l'ordinamento.
  */
 void selectionSortRicorsivo(int *array, int dim, int start) {
-    // l'algoritmo è terminato
-    cont_conf_ric++;
-    if(start >= dim-1)
+    int minIndex;
+
+
+    if(start >= dim - 1)
         return;
 
-    // trovo l'elemento minimo tra quelli successivi a array[start]
-    int minIndex = findMin(array, start, start+1, dim);
 
-    // scambio del minimo con start, se array[minimo] < array[start]
-    scambiaInteri(array, start, minIndex);
+    minIndex = findMin(array, start, start, dim);
+
+    scambiaInteri(array, minIndex, start);
     cont_scambi_ric++;
 
-    // chiamata ricorsiva sull'elemento successivo
-    selectionSortRicorsivo(array, dim, start+1);
+    selectionSortRicorsivo(array, dim, start + 1);
 }
 
 

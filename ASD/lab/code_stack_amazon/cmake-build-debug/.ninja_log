@@ -1,0 +1,15 @@
+# ninja log v5
+0	27	1689846879865726325	CMakeFiles/code_stack_amazon.dir/main.c.o	b74409fb47bae414
+1	45	1689846879882726347	CMakeFiles/code_stack_amazon.dir/code_stack.c.o	ebacb7dfaf36664
+45	68	1689846879905726377	code_stack_amazon	1a1185d386fbbad
+0	41	1689846931773771736	CMakeFiles/code_stack_amazon.dir/code_stack.c.o	ebacb7dfaf36664
+41	63	1689846931794771746	code_stack_amazon	1a1185d386fbbad
+0	46	1689846969377779928	CMakeFiles/code_stack_amazon.dir/code_stack.c.o	ebacb7dfaf36664
+46	72	1689846969403779927	code_stack_amazon	1a1185d386fbbad
+0	61	1689846991018775885	CMakeFiles/code_stack_amazon.dir/code_stack.c.o	ebacb7dfaf36664
+61	99	1689846991055775873	code_stack_amazon	1a1185d386fbbad
+0	49	1689847119628634966	CMakeFiles/code_stack_amazon.dir/code_stack.c.o	ebacb7dfaf36664
+49	75	1689847119653634921	code_stack_amazon	1a1185d386fbbad
+1	29	1690209366223008421	CMakeFiles/code_stack_amazon.dir/main.c.o	b74409fb47bae414
+1	47	1690209366240008340	CMakeFiles/code_stack_amazon.dir/code_stack.c.o	ebacb7dfaf36664
+47	71	1690209366264008226	code_stack_amazon	1a1185d386fbbad

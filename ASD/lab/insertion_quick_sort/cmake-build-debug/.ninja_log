@@ -1,0 +1,22 @@
+# ninja log v5
+0	69	1689951983997082058	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+0	70	1689951983997082058	CMakeFiles/insertion_quick_sort.dir/insertion_quick_sort.c.o	62fdcbd0842156ab
+70	101	1689951984029081679	insertion_quick_sort	bebf93b815364dd0
+1	33	1689952066258147597	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+0	41	1689952066266147510	CMakeFiles/insertion_quick_sort.dir/insertion_quick_sort.c.o	62fdcbd0842156ab
+41	65	1689952066289147260	insertion_quick_sort	bebf93b815364dd0
+1	36	1689952085746937212	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+36	61	1689952085771936945	insertion_quick_sort	bebf93b815364dd0
+0	29	1689952102366760879	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+30	52	1689952102388760647	insertion_quick_sort	bebf93b815364dd0
+0	29	1689952143787333141	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+30	54	1689952143811332898	insertion_quick_sort	bebf93b815364dd0
+0	32	1689952169809072528	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+32	54	1689952169831072310	insertion_quick_sort	bebf93b815364dd0
+0	35	1689952179156980359	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+35	59	1689952179181980114	insertion_quick_sort	bebf93b815364dd0
+1	36	1689952185893914396	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+36	61	1689952185917914162	insertion_quick_sort	bebf93b815364dd0
+1	30	1690208356496787140	CMakeFiles/insertion_quick_sort.dir/main.c.o	35cdc77b383d982c
+1	36	1690208356503787147	CMakeFiles/insertion_quick_sort.dir/insertion_quick_sort.c.o	62fdcbd0842156ab
+36	58	1690208356523787169	insertion_quick_sort	bebf93b815364dd0

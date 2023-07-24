@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/just/Personal/unistuff/ASD/lab/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab">
+				<Option output="/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/lab" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/just/Personal/unistuff/ASD/lab/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab/fast">
+				<Option output="/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/lab" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/just/Personal/unistuff/ASD/lab/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/just/Personal/unistuff/ASD/lab/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/just/Personal/unistuff/ASD/lab/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/just/Personal/unistuff/ASD/lab/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/binary_search/binary_search.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/binary_search/binary_search.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/binary_search/binary_search_hotel.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/binary_search/binary_search_hotel.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/binary_search/binary_search_iterativa.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/binary_search/binary_search_ricorsiva.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/kmp_pattern_search/kmp_pattern_search.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/kmp_pattern_search/kmp_pattern_search.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/main.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/matrice_sparsa/matrice_sparsa.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/selection_sort/selection_sort.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/selection_sort/selection_sort.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/selection_sort/selection_sort_iterativo.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/selection_sort/selection_sort_ricorsivo.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/utils/array.c">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/utils/array.h">
+			<Option target="lab"/>
+		</Unit>
+		<Unit filename="/home/just/Personal/unistuff/ASD/lab/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

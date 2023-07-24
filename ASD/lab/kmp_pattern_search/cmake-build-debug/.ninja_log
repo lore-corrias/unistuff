@@ -1,0 +1,12 @@
+# ninja log v5
+0	42	1690210017673640322	CMakeFiles/kmp_pattern_search.dir/main.c.o	bd0a8623a5758548
+1	46	1690210017677640300	CMakeFiles/kmp_pattern_search.dir/kmp_pattern_search.c.o	cd06b462648705d6
+46	75	1690210017706640142	kmp_pattern_search	d423250517b41686
+0	34	1690210185652261533	CMakeFiles/kmp_pattern_search.dir/kmp_pattern_search.c.o	cd06b462648705d6
+34	57	1690210185675261828	kmp_pattern_search	d423250517b41686
+0	34	1690210205291507939	CMakeFiles/kmp_pattern_search.dir/kmp_pattern_search.c.o	cd06b462648705d6
+34	57	1690210205313508208	kmp_pattern_search	d423250517b41686
+0	34	1690210334663873747	CMakeFiles/kmp_pattern_search.dir/kmp_pattern_search.c.o	cd06b462648705d6
+34	57	1690210334685873945	kmp_pattern_search	d423250517b41686
+0	41	1690211401123429459	CMakeFiles/kmp_pattern_search.dir/kmp_pattern_search.c.o	cd06b462648705d6
+42	69	1690211401150429433	kmp_pattern_search	d423250517b41686

@@ -1,0 +1,3 @@
+/home/just/Personal/unistuff/ASD/lab/selection_sort/cmake-build-debug/CMakeFiles/selection_sort.dir
+/home/just/Personal/unistuff/ASD/lab/selection_sort/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/just/Personal/unistuff/ASD/lab/selection_sort/cmake-build-debug/CMakeFiles/rebuild_cache.dir

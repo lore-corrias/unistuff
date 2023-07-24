@@ -1,125 +1,153 @@
-//
-// Created by just on 23/03/23.
-//
+#include "matrice_sparsa.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-
-#define NUMC 15
-#define NUMR 10
 
 int numUsedIntegerClassic;  //variabile da usare per contare il numero di interi nella matrice tradizionale
 int numUsedIntegerSparse;   //variabile da usare per contare il numero di interi nella matrice sparsa
 
-typedef struct {
-    int riga;
-    int colonna;
-    int valore;
-} triplaMatrice;
+/* Da cambiare, non passarla come parametro */
+Tripla* creaMatriceSparsa() {
+    Tripla tripla;
+    Tripla* matriceSparsa = NULL;
+    int i;
 
-triplaMatrice* inserisciTripleMatrice();
-void fill_classic_matrix(int matrix[][NUMC], int numr, int numc);
-void print_classic_matrix(int matrix[][NUMC], int numr, int numc);
-void search_element_in_classic_matrix(int matrix[][NUMC], int numr, int numc, int numric);
+    numUsedIntegerSparse = 0;
+    printf("Inserisci la prima tripla:\n\n");
+    printf("Numero di righe: ");
+    scanf("%d", &tripla.riga);
+    printf("Numero di colonne: ");
+    scanf("%d", &tripla.colonna);
+    numUsedIntegerClassic = tripla.riga * tripla.colonna;
+    numUsedIntegerSparse+=3;
 
+    do{
+        printf("Numero di elementi non nulli: ");
+        scanf("%d", &tripla.valore);
+    }while (tripla.valore > (tripla.riga * tripla.colonna));
 
-int matrice_sparsa()
-{
-    int matrix[NUMR][NUMC] = {{0}};
-    int numric = 71;     // assegnare a numric il numero da cercare.
+    matriceSparsa = (Tripla*)malloc((tripla.valore + 1) * sizeof(Tripla));
 
-    // INIZIO TEST MATRICE CLASSICA
-    fill_classic_matrix(matrix, NUMR, NUMC);
-    printf("\n");
-    print_classic_matrix(matrix, NUMR, NUMC);
-    search_element_in_classic_matrix(matrix, NUMR, NUMC, numric);
-    // FINE TEST MATRICE CLASSICA
+    matriceSparsa[0] = tripla;
 
-    /*
-    INIZIO TEST MATRICE SPARSA
-    Implementare:
-        - creazione matrice sparsa, chiedendo le triple in input (per testare il corretto funzionamento: inserite gli stessi valori della matrice classica, vedi slide)
-        - stampa matrice sparsa
-        - ricerca di un elemento all'interno della matrice sparsa
-        - trasposizione rapida della matrice sparsa.
-    */
+    printf("Inserisci i valori:\n\n");
+    for(i = 1; i <= tripla.valore; i++){
+        do {
+            printf("Riga (max %d): ", tripla.riga - 1);
+            scanf("%d", &matriceSparsa[i].riga);
+        }while(matriceSparsa[i].riga < 0 || matriceSparsa[i].riga > tripla.riga - 1);
 
-    triplaMatrice* matrice = inserisciTripleMatrice();
+        do {
+            printf("Colonna (max %d): ", tripla.colonna - 1);
+            scanf("%d", &matriceSparsa[i].colonna);
+        }while(matriceSparsa[i].colonna < 0 || matriceSparsa[i].colonna > tripla.colonna - 1);
 
-    /*
-    FINE TEST MATRICE SPARSA
-    */
+        printf("Valore: ");
+        scanf("%d", &matriceSparsa[i].valore);
 
-    return 0;
-}
-
-triplaMatrice* inserisciTripleMatrice() {
-    int nTriple;
-    triplaMatrice* matrice = NULL;
-
-    do {
-        printf("\nInserisci il numero di elementi da inserire: ");
-        scanf("%d", &nTriple);
-    } while(nTriple <= 0);
-
-    matrice = calloc(nTriple, sizeof(triplaMatrice));
-    if(matrice == NULL) {
-        printf("\nImpossibile allocare dinamicamente.");
-        exit(-1);
+        numUsedIntegerSparse+=3;
     }
 
-    for(int i = 0; i < nTriple; i++) {
-        // inserimento numero riga
-        do {
-            printf("\nInserisci il numero della riga dell'elemento: ");
-            scanf("%d", &matrice[i].riga);
-        } while(matrice[i].riga <= 0);
+    printf("Numero di locazioni intere usate nella rappresentazione classica delle matrici: %d\n", numUsedIntegerClassic);
+    printf("Numero di locazioni intere usate nella rappresentazione delle matrici sparse: %d\n\n", numUsedIntegerSparse);
 
-        // inserimento numero colonna
-        do {
-            printf("\nInserisci il numero della colonna dell'elemento: ");
-            scanf("%d", &matrice[i].colonna);
-        } while(matrice[i].colonna <= 0);
-
-        // inserimento valore
-        do {
-            printf("\nInserisci il valore dell'elemento: ");
-            scanf("%d", &matrice[i].valore);
-        } while(matrice[i].valore <= 0);
-    }
-
-    return matrice;
+    return matriceSparsa;
 }
 
-void stampaMatriceSparsa(triplaMatrice* matrice, int righeMatrice, int colonneMatrice, int nTriple) {
-    int riga = 0;
-    for(int i = 0; i < nTriple && riga < righeMatrice; i++) {
-        if(riga != matrice[i].riga) {
-            for(int j = 0; j < colonneMatrice; j++)
-                printf("0 ");
-            printf("\n");
-            riga++;
-        } else {
-            for(int j = 0; j < colonneMatrice; j++) {
-                if(j == matrice[i].colonna)
-                    printf("%d ", matrice[i].valore);
-                else
-                    printf("0 ");
-                printf("\n");
+void stampaMatriceSparsa(Tripla* matriceSparsa){
+    int i, j, k = 1;
+
+    for(i = 0; i < matriceSparsa[0].riga; i++){
+        for(j = 0; j < matriceSparsa[0].colonna; j++){
+            if(i == matriceSparsa[k].riga && j == matriceSparsa[k].colonna) {
+                printf("%-2d ", matriceSparsa[k].valore);
+                k++;
+            }
+            else {
+                printf("%-2d ", 0);
             }
         }
+        printf("\n");
+    }
+
+    printf("\n\n");
+}
+
+void cercaElementoMatriceSparsa(Tripla *matriceSparsa) {
+    int primo, ultimo, mezzo;
+    int posizione, numRic;
+    _Bool keepSearching = true;
+
+    printf("Che numero vuoi cercare? (Diverso da 0): ");
+    scanf("%d", &numRic);
+
+    posizione = -1;
+
+    primo = 1;
+    ultimo = matriceSparsa[0].valore;
+    while (primo <= ultimo && keepSearching){
+        mezzo = (primo + ultimo)/2;
+        if(numRic < matriceSparsa[mezzo].valore)
+            ultimo = mezzo - 1;
+        else if(numRic == matriceSparsa[mezzo].valore) {
+            keepSearching = false;
+            posizione = mezzo;
+        }
+        else
+            primo = mezzo + 1;
+    }
+
+    if(posizione == -1)
+        printf("L'elemento non e\' presente nella matrice\n");
+    else
+        printf("L'elemento cercato e\' in posizione: [%d] [%d]\n", matriceSparsa[posizione].riga, matriceSparsa[posizione].colonna);
+}
+
+void trasposizioneRapida(Tripla* a, Tripla* b){
+    int numCol = a[0].colonna;
+    int numVal = a[0].valore;
+    int *terminiRiga = NULL, *posIniziale = NULL;
+    int posCorr;
+    int i;
+
+    b[0].riga = numCol;
+    b[0].colonna = a[0].riga;
+    b[0].valore = numVal;
+
+    terminiRiga = (int*)malloc(numCol * sizeof(int));
+    posIniziale = (int*)malloc(numCol * sizeof(int));
+
+    if(numVal > 0) {
+        /* Creazione terminiRiga */
+        for (i = 0; i < numCol; i++)
+            terminiRiga[i] = 0;
+        for (i = 1; i <= numVal; i++)
+            terminiRiga[a[i].colonna]++;
+        //terminiRiga[a[i].colonna] = terminiRiga[a[i].colonna] + 1;
+
+        /* Creazione posIniziale */
+        posIniziale[0] = 1;
+        for (i = 1; i < numCol; i++)
+            posIniziale[i] = posIniziale[i - 1] + terminiRiga[i - 1];
+
+        /* Trasposizione */
+        for (i = 1; i <= numVal; i++) {
+            posCorr = posIniziale[a[i].colonna];
+            posIniziale[a[i].colonna]++;
+            //posIniziale[a[i].colonna] = posIniziale[a[i].colonna] + 1;
+            b[posCorr].riga = a[i].colonna;
+            b[posCorr].colonna = a[i].riga;
+            b[posCorr].valore = a[i].valore;
+        }
     }
 }
 
-void cercaElementoMatriceSparsa(triplaMatrice* matrice, int nElementi, int elemento) {
-    for(int i = 0; i < nElementi; i++) {
-        if (matrice[i].valore == elemento) {
-            printf("\nElemento trovato in riga %d, colonna %d.\n", matrice[i].riga, matrice[i].colonna);
-            return;
-        }
-    }
-    printf("\nElemento non presente.");
+/**
+ * Procedura che inizializza la prima posizone della matrice sparsa a 0
+ * @param matriceSparsa
+ */
+void inizializzaMatriceSparsa(Tripla *matriceSparsa){
+    matriceSparsa[0].riga = matriceSparsa[0].colonna = matriceSparsa[0].valore = 0;
 }
+
 
 // Funzione che riempie (con i valori dell'esempio presenti nelle slide della lezione 3) la matrice classica passata in ingresso
 void fill_classic_matrix(int matrix[][NUMC], int numr, int numc)
@@ -149,15 +177,11 @@ void print_classic_matrix(int matrix[][NUMC], int numr, int numc)
 }
 
 // Funzione che implementa la ricerca di un elemento (numric) in una matrice classica
-void search_element_in_classic_matrix(int matrix[][NUMC], int numr, int numc, int numric)
-{
+void search_element_in_classic_matrix(int matrix[][NUMC], int numr, int numc, int numric) {
     int i, j = 0;
-    for(i=0; i<numr; i++)
-    {
-        for(j=0; j<numc; j++)
-        {
-            if(matrix[i][j] == numric)
-            {
+    for (i = 0; i < numr; i++) {
+        for (j = 0; j < numc; j++) {
+            if (matrix[i][j] == numric) {
                 printf("Elemento %d trovato in posizione (%d, %d).\n", numric, i, j);
                 return;
             }

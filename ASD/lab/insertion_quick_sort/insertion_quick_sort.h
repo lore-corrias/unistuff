@@ -1,8 +1,23 @@
-//
-// Created by just on 21/07/23.
-//
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-#ifndef INSERTION_QUICK_SORT_INSERTION_QUICK_SORT_H
-#define INSERTION_QUICK_SORT_INSERTION_QUICK_SORT_H
+#define LEN 15
 
-#endif //INSERTION_QUICK_SORT_INSERTION_QUICK_SORT_H
+#define ORDINATO 0
+#define INV_ORDINATO 1
+#define QUASI_ORDINATO 2
+#define CASUALE 3
+
+
+int *generaArray(int lunghezza, int tipo_input);
+
+void stampa_array(int array[], int lunghezza);
+
+void swap(int *a, int *b);
+
+void insertionSort(int *lista, int dim);
+
+void quickSort(int lista[], int u, int v);
+
+void mixSort(int lista[], int u, int v, int M);
