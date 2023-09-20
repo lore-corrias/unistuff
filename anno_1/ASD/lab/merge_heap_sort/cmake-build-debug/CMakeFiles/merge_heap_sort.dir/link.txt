@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/merge_heap_sort.dir/main.c.o CMakeFiles/merge_heap_sort.dir/merge_heap_sort.c.o -o merge_heap_sort 

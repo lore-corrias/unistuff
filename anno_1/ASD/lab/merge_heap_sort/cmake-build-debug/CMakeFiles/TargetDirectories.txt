@@ -1,0 +1,3 @@
+/home/just/Personal/uni/unistuff/ASD/lab/merge_heap_sort/cmake-build-debug/CMakeFiles/merge_heap_sort.dir
+/home/just/Personal/uni/unistuff/ASD/lab/merge_heap_sort/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/just/Personal/uni/unistuff/ASD/lab/merge_heap_sort/cmake-build-debug/CMakeFiles/rebuild_cache.dir

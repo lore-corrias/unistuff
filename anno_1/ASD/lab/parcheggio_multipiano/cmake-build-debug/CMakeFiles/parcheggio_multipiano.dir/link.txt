@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/parcheggio_multipiano.dir/main.c.o CMakeFiles/parcheggio_multipiano.dir/parcheggio_multipiano.c.o -o parcheggio_multipiano 

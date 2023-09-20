@@ -1,0 +1,3 @@
+/home/just/Personal/uni/unistuff/ASD/lab/parcheggio_multipiano/cmake-build-debug/CMakeFiles/parcheggio_multipiano.dir
+/home/just/Personal/uni/unistuff/ASD/lab/parcheggio_multipiano/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/just/Personal/uni/unistuff/ASD/lab/parcheggio_multipiano/cmake-build-debug/CMakeFiles/rebuild_cache.dir
