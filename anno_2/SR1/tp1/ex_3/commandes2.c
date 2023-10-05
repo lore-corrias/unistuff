@@ -30,12 +30,14 @@ int main(int argc, char *argv[]) {
       execvp(pMots[0], pMots);
       erreur("execvp erreur", EXIT_FAILURE);
     default:
-      printf("[%d] J'ai délégué %s à %d. J'attends sa fin...\n", getpid(),
-             commandeCurr, f_id);
-      wait(NULL);
-      printf("[%d] %d terminé.\n", getpid(), f_id);
+      printf("[%d] J'ai délégué %s à %d...\n", getpid(), commandeCurr, f_id);
     }
   }
 
+  // si wait(NULL) retourne "-1", alors il n'y a plus de fils
+  while (wait(NULL) != -1)
+    continue;
+
   printf("[%d] J'ai fini.\n", getpid());
+  return 0;
 }
