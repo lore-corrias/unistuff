@@ -1,5 +1,5 @@
 ## Generale
-La sintassi generale di Java è riassumibile nel file di esempio `Libro.java` presente in questa stessa directory.
+Per la sintassi generale, si guardi la lezione successiva.
 ## Compilazione
 Per compilare un programma in Java, è sufficiente scrivere su linea di comando:
 ```bash
